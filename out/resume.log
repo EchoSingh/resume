@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.6.15)  15 JUN 2024 07:58
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.6.15)  15 JUN 2024 08:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -107,7 +107,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 
 (/usr/local/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
+Package: array 2024/05/23 v2.6c Tabular extension package (FMi)
 \col@sep=\dimen150
 \ar@mcellbox=\box52
 \extrarowheight=\dimen151
