@@ -1,0 +1,243 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\usepackage{url}
+\usepackage{parskip} 	
+\RequirePackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.2\textwidth}
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{4pt}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.3,0.7}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+
+\pagestyle{empty}
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+%----------Header--------------
+
+
+  \begin{tabularx}{\linewidth}{@{} C @{}}
+
+    \Huge{Aditya Singh} \\[7.5pt]
+
+    \href{https://github.com/aditya26062003}{\raisebox{-0.05\height}\faGithub\ aditya26062003} \ $|$ \  
+    \href{https://www.linkedin.com/in/adityasingh26062003/}{\raisebox{-0.05\height}\faLinkedin\ adityasingh26062003} \ $|$ \  \ 
+    \href{mailto:adityarathore2606@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ adityarathore2606@gmail.com} \ $|$ \ 
+    \href{tel:+919752962206}{\raisebox{-0.05\height}\faMobile \ +91 9752962206}
+    \\
+  \end{tabularx}
+
+
+%----------Education-----------
+
+
+  \section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dayananda Sagar College Of Engineering}{Bengaluru, India}
+    {B.E in Information Science (VTU)}{2022 -- 2026}
+    \resumeItemListStart
+      \resumeItem{SGPA: 9.5}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Army Public School Bhopal}{Bhopal, India}
+    {CBSE - Higher Secondary School}{2020 -- 2021}
+    \resumeItemListStart
+      \resumeItem{Percentage: 96.4\%}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Army Public School Bhopal}{Bhopal, India}
+    {CBSE - Secondary School}{2018 -- 2019}
+    \resumeItemListStart
+      \resumeItem{Percentage: 90.6\%}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%----------Skills--------------
+
+\vspace{6pt}
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+  \textbf{Languages:} & \normalsize{C, C++, Python, Java, SQL} \\
+  \textbf{Frameworks/Technologies:} & \normalsize{MySQL, Git, GitHub, DBMS, Transformers, TensorFlow} \\
+  \textbf{Other:} & \normalsize{Fine-tuning models using LLM, Jupyter Notebooks} \\
+\end{tabularx}
+\vspace{-5pt}
+
+
+
+%----------Projects------------
+\section{Projects}
+
+\subsection*{Math-Wizard}
+
+\noindent
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{Description:}\\
+  Implement Math Q\&A .
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{Technologies Used:}\\
+  pytorch,transformers,gradio,deepseekai
+\end{minipage}%
+\begin{minipage}[t]{0.2\textwidth}
+  \textbf{Link:}\\
+  \href{https://github.com/aditya26062003/Math-Wizard}{Math-Wizard} \ $|$
+  \href{https://huggingface.co/spaces/adi2606/Math_Wizard}{Running}
+\end{minipage}
+
+\subsection*{MediBot}
+
+\noindent
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{Description:}\\
+  Help in Medical treatments.
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{Technologies Used:}\\
+  jupyter notebook, pytorch, transformers
+\end{minipage}%
+\begin{minipage}[t]{0.2\textwidth}
+  \textbf{Link:}\\
+  \href{https://github.com/aditya26062003/MediBot}{MediBot}
+\end{minipage}
+
+\subsection*{Menstrual-Health-Awareness-Model}
+
+\noindent
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{Description:}\\
+  Model for Menstrual Health Awareness.
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{Technologies Used:}\\
+  Jupyter Notebook
+\end{minipage}%
+\begin{minipage}[t]{0.2\textwidth}
+  \textbf{Link:}\\
+  \href{https://huggingface.co/adi2606/Menstrual-Health-Awareness-Chatbot}{Menstrual-Health-Model}
+\end{minipage}
+
+\subsection*{text-similarity-explore}
+
+\noindent
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{Description:}\\
+  text similarity using various techniques.
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{Technologies Used:}\\
+  Jupyter Notebook
+\end{minipage}%
+\begin{minipage}[t]{0.2\textwidth}
+  \textbf{Link:}\\
+  \href{https://github.com/aditya26062003/text-similarity-explorer}{text-similarity-explore}
+\end{minipage}
+
+\subsection*{SnakeGame}
+
+\noindent
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{Description:}\\
+  Simple Console Snake Game.
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{Technologies Used:}\\
+  C++
+\end{minipage}%
+\begin{minipage}[t]{0.2\textwidth}
+  \textbf{Link:}\\
+  \href{https://github.com/aditya26062003/SnakeGame}{SnakeGame}
+\end{minipage}
+
+% Add more projects as completing
+
+
+
+
+%----------Achievements---------
+
+
+\section{Achievements and Certificates}
+
+\subsection*{Hackrefine}
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item Participated in the Hack Refine Hackathon.
+    \end{itemize}
+    
+    \columnbreak
+    
+    \begin{itemize}
+        \item \textbf{Certificate:} \href{https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:2e58002b-6058-312f-8fc2-a18b5f35ada0}{Click here}
+    \end{itemize}
+\end{multicols}
+\end{document}
