@@ -13,14 +13,22 @@ jobs:
       - name: Run CV generation
         uses: ./ 
 
-      - name: Set Git user
-        run: git config --local user.email "action@github.com"
-      
-      - name: Add and commit changes
+      - name: Commit files
+        id: commit
         run: |
-          git add .
-          git commit -m "Update resume.pdf via GitHub Actions"
-      
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          git add --all
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "::set-output name=push::false"
+          else
+            git commit -m "Updated Resume via GH Actions." -a
+            echo "::set-output name=push::true"
+          fi
+        shell: bash
+
       - name: Push changes
-        run: |
-          git push origin HEAD:patch-1
+        if: steps.commit.outputs.push == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
