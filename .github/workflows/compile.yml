@@ -1,4 +1,4 @@
- name: Update the Resume
+name: Update the Resume
 
 on: push
 
