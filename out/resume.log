@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.6.19)  19 JUN 2024 16:42
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  24 JUL 2024 05:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **data/resume.tex
 (./data/resume.tex
-LaTeX2e <2024-06-01> patch level 1
+LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
 (/usr/local/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
@@ -134,7 +134,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitdp@description=\count270
 )
 (/usr/local/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
-Package: supertabular 2020/02/02 v4.1g the supertabular environment
+Package: supertabular 2024/07/20 v4.2c the supertabular environment
 \c@tracingst=\count271
 \ST@wd=\dimen158
 \ST@rightskip=\skip54
@@ -145,7 +145,7 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \ST@tailht=\dimen161
 \ST@pagesofar=\dimen162
 \ST@pboxht=\dimen163
-\ST@lineht=\dimen164
+\ST@rowht=\dimen164
 \ST@prevht=\dimen165
 \ST@toadd=\dimen166
 \ST@dimen=\dimen167
@@ -243,7 +243,7 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \bigstrutjot=\dimen182
 )
 (/usr/local/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-05-23 v7.01i Hypertext links for LaTeX
+Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
 
 (/usr/local/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
@@ -285,7 +285,7 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 \Hy@pagecounter=\count285
 
 (/usr/local/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-05-23 v7.01i Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2024-07-10 v7.01j Hyperref: PDFDocEncoding definition (HO)
 )
 (/usr/local/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
@@ -293,7 +293,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 \Hy@SavedSpaceFactor=\count286
 
 (/usr/local/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-05-23 v7.01i Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2024-07-10 v7.01j Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4040.
 Package hyperref Info: Option `draft' set `false' on input line 4040.
@@ -337,7 +337,7 @@ package with kernel methods
 Package hyperref Info: Driver (autodetected): hxetex.
 
 (/usr/local/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2024-05-23 v7.01i Hyperref driver for XeTeX
+File: hxetex.def 2024-07-10 v7.01j Hyperref driver for XeTeX
 \pdfm@box=\box103
 \c@Hy@AnnotLevel=\count292
 \HyField@AnnotCount=\count293
@@ -483,17 +483,17 @@ Package hyperref Info: Link coloring ON on input line 32.
 
 ] (out/resume.aux)
  ***********
-LaTeX2e <2024-06-01> patch level 1
+LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: FE441E329D4B0AABB798BEB7BD2BE52A;438.
  ) 
 Here is how much of TeX's memory you used:
- 11940 strings out of 476212
- 183974 string characters out of 5786566
+ 11945 strings out of 476196
+ 184031 string characters out of 5786192
  1937557 words of memory out of 5000000
- 34331 multiletter control sequences out of 15000+600000
+ 34352 multiletter control sequences out of 15000+600000
  558541 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  69i,9n,80p,1200b,321s stack positions out of 10000i,1000n,20000p,200000b,200000s
