@@ -6,18 +6,18 @@
 \fi
 
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 \RequirePackage{color}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[scale=0.9]{geometry}
 \usepackage{tabularx}
 \usepackage{enumitem}
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 \usepackage{supertabular}
 \usepackage{tabularx}
 \newlength{\fullcollw}
 \setlength{\fullcollw}{0.2\textwidth}
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
@@ -28,11 +28,11 @@
 \usepackage{fontawesome5}
 \usepackage{graphicx}
 
-
 \begin{document}
 
-
 \pagestyle{empty}
+
+% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -77,26 +77,16 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-
-
-%----------Header--------------
-
-
-  \begin{tabularx}{\linewidth}{@{} C @{}}
-
+% Header
+\begin{tabularx}{\linewidth}{@{} C @{}}
     \Huge{Aditya Singh} \\[7.5pt]
-
     \href{https://github.com/EchoSingh}{\raisebox{-0.05\height}\faGithub\ EchoSingh} \ $|$ \  
-    \href{https://www.linkedin.com/in/adityasingh26062003/}{\raisebox{-0.05\height}\faLinkedin\ adityasingh26062003} \ $|$ \  \ 
-    \href{mailto:adityarathore2606@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ adityarathore2606@gmail.com} \ $|$ \ 
-    \\
-  \end{tabularx}
+    \href{https://www.linkedin.com/in/adityasingh26062003/}{\raisebox{-0.05\height}\faLinkedin\ adityasingh26062003} \ $|$ \  
+    \href{mailto:adityarathore2606@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ adityarathore2606@gmail.com} \\
+\end{tabularx}
 
-
-%----------Education-----------
-
-
-  \section{Education}
+% Education
+\section{Education}
 \resumeSubHeadingListStart
   \resumeSubheading
     {Dayananda Sagar College Of Engineering}{Bengaluru, India}
@@ -118,100 +108,34 @@
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-
-%----------Skills--------------
-
-\vspace{6pt}
+% Skills
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
   \textbf{Languages:} & \normalsize{C, C++, Python, Java, SQL} \\
   \textbf{Frameworks/Technologies:} & \normalsize{MySQL, Git, GitHub, DBMS, Transformers, TensorFlow} \\
   \textbf{Other:} & \normalsize{Fine-tuning models using LLM, Jupyter Notebooks} \\
 \end{tabularx}
-\vspace{-5pt}
 
-
-
-%----------Projects------------
+% Projects
 \section{Projects}
 
+% Project 1
 \subsection*{Math-Wizard}
-
 \noindent
 \begin{minipage}[t]{0.4\textwidth}
   \textbf{Description:}\\
-  Implement Math Q\&A .
+  Implement Math Q\&A.
 \end{minipage}%
 \begin{minipage}[t]{0.4\textwidth}
   \textbf{Technologies Used:}\\
-  pytorch,transformers,gradio,deepseekai
+  PyTorch, Transformers, Gradio, DeepSeekAI
 \end{minipage}%
 \begin{minipage}[t]{0.2\textwidth}
   \textbf{Link:}\\
-  \href{https://github.com/EchoSingh/Math-Wizard}{Math-Wizard} \ $|$
+  \href{https://github.com/EchoSingh/Math-Wizard}{Math-Wizard} \ $|$ 
   \href{https://huggingface.co/spaces/adi2606/Math_Wizard}{Running}
 \end{minipage}
 
-\subsection*{MediBot}
+% Add more projects as needed...
 
-\noindent
-\begin{minipage}[t]{0.4\textwidth}
-  \textbf{Description:}\\
-  Help in Medical treatments.
-\end{minipage}%
-\begin{minipage}[t]{0.4\textwidth}
-  \textbf{Technologies Used:}\\
-  jupyter notebook, pytorch, transformers
-\end{minipage}%
-\begin{minipage}[t]{0.2\textwidth}
-  \textbf{Link:}\\
-  \href{https://github.com/EchoSingh/MediBot}{MediBot}
-\end{minipage}
-
-\subsection*{Menstrual-Health-Awareness-Model}
-
-\noindent
-\begin{minipage}[t]{0.4\textwidth}
-  \textbf{Description:}\\
-  Model for Menstrual Health Awareness.
-\end{minipage}%
-\begin{minipage}[t]{0.4\textwidth}
-  \textbf{Technologies Used:}\\
-  Jupyter Notebook
-\end{minipage}%
-\begin{minipage}[t]{0.2\textwidth}
-  \textbf{Link:}\\
-  \href{https://huggingface.co/adi2606/Menstrual-Health-Awareness-Chatbot}{Menstrual-Health-Model}
-\end{minipage}
-
-\subsection*{text-similarity-explore}
-
-\noindent
-\begin{minipage}[t]{0.4\textwidth}
-  \textbf{Description:}\\
-  text similarity using various techniques.
-\end{minipage}%
-\begin{minipage}[t]{0.4\textwidth}
-  \textbf{Technologies Used:}\\
-  Jupyter Notebook
-\end{minipage}%
-\begin{minipage}[t]{0.2\textwidth}
-  \textbf{Link:}\\
-  \href{https://github.com/EchoSingh/text-similarity-explorer}{text-similarity-explore}
-\end{minipage}
-
-\subsection*{SnakeGame}
-
-\noindent
-\begin{minipage}[t]{0.4\textwidth}
-  \textbf{Description:}\\
-  Simple Console Snake Game.
-\end{minipage}%
-\begin{minipage}[t]{0.4\textwidth}
-  \textbf{Technologies Used:}\\
-  C++
-\end{minipage}%
-\begin{minipage}[t]{0.2\textwidth}
-  \textbf{Link:}\\
-  \href{https://github.com/EchoSingh/SnakeGame}{SnakeGame}
-\end{minipage}
+\end{document}
