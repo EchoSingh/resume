@@ -2,8 +2,6 @@
 
 Welcome to my **Resume** repository! This project compiles my resume using LaTeX and GitHub Actions for automation, ensuring a professional and polished PDF output.
 
-[My Resume Here](https://github.com/aditya26062003/resume/blob/main/out/resume.pdf)
-
 ## 🚀 Features
 
 - 🖋️ Written in LaTeX for high-quality typesetting.
