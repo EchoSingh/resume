@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.27)  27 JAN 2025 15:08
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.29)  29 JAN 2025 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -481,20 +481,13 @@ Package hyperref Info: Link coloring ON on input line 31.
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
  ***********
-
-
-Package rerunfilecheck Warning: File `resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `resume.out':
-(rerunfilecheck)             Before: FE441E329D4B0AABB798BEB7BD2BE52A;438
-(rerunfilecheck)             After:  A149DF96A44EA36E98E6834C5B756D9F;244.
+Package rerunfilecheck Info: File `resume.out' has not changed.
+(rerunfilecheck)             Checksum: A149DF96A44EA36E98E6834C5B756D9F;244.
  ) 
 Here is how much of TeX's memory you used:
  11921 strings out of 475809
  183123 string characters out of 5774127
- 604510 words of memory out of 5000000
+ 604295 words of memory out of 5000000
  34703 multiletter control sequences out of 15000+600000
  559309 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
