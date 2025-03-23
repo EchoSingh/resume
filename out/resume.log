@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.29)  29 JAN 2025 15:22
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.23)  23 MAR 2025 07:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **data/resume.tex
 (./data/resume.tex
-LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-25>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
 (/usr/local/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
 (/usr/local/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -47,7 +47,7 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
 (/usr/local/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count266
 ))
 (/usr/local/texlive/texmf-dist/tex/latex/graphics/color.sty
@@ -125,7 +125,7 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \TX@ftn=\toks20
 )
 (/usr/local/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2025/01/19 v3.10 Customized lists
+Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip53
 \enit@outerparindent=\dimen157
 \enit@toks=\toks21
@@ -365,7 +365,7 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 27.
 
 (/usr/local/texlive/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
 (/usr/local/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-12-25 L3 programming layer (loader) 
+Package: expl3 2025-01-18 L3 programming layer (loader) 
 
 (/usr/local/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
@@ -478,19 +478,19 @@ Package hyperref Info: Link coloring ON on input line 31.
 
 ] (out/resume.aux)
  ***********
-LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-25>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: A149DF96A44EA36E98E6834C5B756D9F;244.
  ) 
 Here is how much of TeX's memory you used:
- 11921 strings out of 475809
- 183123 string characters out of 5774127
- 604295 words of memory out of 5000000
- 34703 multiletter control sequences out of 15000+600000
+ 11920 strings out of 475805
+ 183107 string characters out of 5774134
+ 604316 words of memory out of 5000000
+ 34707 multiletter control sequences out of 15000+600000
  559309 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 69i,9n,80p,1200b,321s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,9n,79p,1200b,321s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on out/resume.pdf (1 page).
