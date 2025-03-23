@@ -1,141 +1,140 @@
-\documentclass[a4paper,10pt]{article}
-\usepackage{iftex}
-\ifPDFTeX
-  \input{glyphtounicode}
-  \pdfgentounicode=1
-\fi
+%------------------------
+% Resume in LaTeX
+% Author : Aditya Singh
+% License : MIT
+%------------------------
 
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc} % Use UTF-8 encoding for broader character support
+\usepackage{geometry}
+\geometry{margin=1in} % Standard margin size for better readability
 \usepackage{url}
 \usepackage{parskip}
-\RequirePackage{color}
-\usepackage[dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
-\usepackage{tabularx}
-\usepackage{enumitem}
-\newcolumntype{C}{>{\centering\arraybackslash}X}
-\usepackage{supertabular}
-\usepackage{tabularx}
-\newlength{\fullcollw}
-\setlength{\fullcollw}{0.2\textwidth}
-\usepackage{titlesec}
-\usepackage{multicol}
-\usepackage{multirow}
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{4pt}{4pt}
-\usepackage[unicode, draft=false]{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.3,0.7}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
 \usepackage{fontawesome5}
 \usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+% Define custom title format
+\titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{4pt}
 
 \begin{document}
 
+% Remove page numbers for resumes
 \pagestyle{empty}
 
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
-}
+% Custom commands for structuring resume content
+\newcommand{\resumeItem}[1]{\item\small{#1}}
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-% Header
-\begin{tabularx}{\linewidth}{@{} C @{}}
-    \Huge{Aditya Singh} \\[7.5pt]
-    \href{https://github.com/EchoSingh}{\raisebox{-0.05\height}\faGithub\ EchoSingh} \ $|$ \  
-    \href{https://www.linkedin.com/in/adityasingh26062003/}{\raisebox{-0.05\height}\faLinkedin\ adityasingh26062003} \ $|$ \  
-    \href{mailto:adityarathore2606@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ adityarathore2606@gmail.com} \\
-\end{tabularx}
+%----------Header--------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Huge Aditya Singh} & \\
+  \textit{(Template Version)} & \\
+  \href{mailto:adityarathore2606@gmail.com}{adityarathore2606@gmail.com} & \\
+  \href{https://github.com/EchoSingh}{GitHub: EchoSingh} & \\
+  \href{https://www.linkedin.com/in/adityasinghgdev/}{LinkedIn: adityasinghgdev} & \\
+  \href{https://huggingface.co/adi2606}{Hugging Face: adi2606} & \\
+\end{tabular*}
 
-% Education
+%----------Education-----------
 \section{Education}
 \resumeSubHeadingListStart
   \resumeSubheading
     {Dayananda Sagar College Of Engineering}{Bengaluru, India}
     {B.E in Information Science (VTU)}{2022 -- 2026}
     \resumeItemListStart
-      \resumeItem{SGPA: 9.5}
+      \resumeItem{Current SGPA: 9.4}
     \resumeItemListEnd
+    
   \resumeSubheading
-    {Army Public School Bhopal}{Bhopal, India}
-    {CBSE - Higher Secondary School}{2020 -- 2021}
+    {Army Public School, Bhopal}{Bhopal, India}
+    {Higher Secondary (CBSE)}{2020 -- 2021}
     \resumeItemListStart
-      \resumeItem{Percentage: 96.4\%}
+      \resumeItem{Percentage: 96.4\% (Class 12th)}
     \resumeItemListEnd
+    
   \resumeSubheading
-    {Army Public School Bhopal}{Bhopal, India}
-    {CBSE - Secondary School}{2018 -- 2019}
+    {Army Public School, Bhopal}{Bhopal, India}
+    {Secondary School (CBSE)}{2018 -- 2019}
     \resumeItemListStart
-      \resumeItem{Percentage: 90.6\%}
+      \resumeItem{Percentage: 90.6\% (Class 10th)}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-% Skills
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-  \textbf{Languages:} & \normalsize{C, C++, Python, Java, SQL} \\
-  \textbf{Frameworks/Technologies:} & \normalsize{MySQL, Git, GitHub, DBMS, Transformers, TensorFlow} \\
-  \textbf{Other:} & \normalsize{Fine-tuning models using LLM, Jupyter Notebooks} \\
+%----------Achievements---------
+\section{Achievements and Certificates}
+\resumeItemListStart
+  \resumeItem{Participated in Hack Refine Hackathon (2024). Links: \href{https://github.com/EchoSingh}{GitHub}}
+  \resumeItem{Participated in Aventus 2.0 National-level Hackathon (2024). Links: \href{https://github.com/EchoSingh}{GitHub}}
+  \resumeItem{Top 10 in Sandbox 2025 Cybersecurity Hackathon (2024). Links: \href{https://github.com/EchoSingh}{GitHub}}
+\resumeItemListEnd
+
+%----------Projects------------
+\section{Projects}
+\begin{tabularx}{\linewidth}{@{}X X@{}}
+  \textbf{Math-Wizard} & \textbf{MediBot} \\
+  \textit{A mathematical problem solver with step-by-step explanations.} & \textit{A medical chatbot powered by Medical-Llama3-8B for medical queries.} \\
+  \textbf{Technologies:} Python, Gradio, Transformers, PyTorch & \textbf{Technologies:} Jupyter Notebook, CUDA, Transformers \\
+  \textbf{Links:} \href{https://github.com/EchoSingh/Math-Wizard}{GitHub}, \href{https://huggingface.co/spaces/adi2606/Math_Wizard}{Demo} & \textbf{Links:} \href{https://github.com/EchoSingh/FastMedicalBot}{GitHub} \\[1ex]
+
+  \textbf{Menstrual-Health-QA-Model} & \textbf{CarGoPlus} \\
+  \textit{QA model for addressing menstrual health queries.} & \textit{Car rental management system with a GUI.} \\
+  \textbf{Technologies:} Jupyter Notebook, Hugging Face Spaces & \textbf{Technologies:} MySQL, C++, wxWidgets \\
+  \textbf{Links:} \href{https://huggingface.co/adi2606/MenstrualQA}{GitHub}, \href{https://huggingface.co/spaces/adi2606/MenstrualQA}{Demo} & \textbf{Links:} \href{https://github.com/EchoSingh/CarGoPlus}{GitHub} \\[1ex]
+
+  \textbf{Aho-Corasick Visualization} & \textbf{ChatBot Web Project} \\
+  \textit{Visualizing Aho-Corasick string-search algorithm.} & \textit{Chatbot with SQLite3-based search storage.} \\
+  \textbf{Technologies:} C++, wxWidgets & \textbf{Technologies:} HTML, CSS, JavaScript, SQLite3 \\
+  \textbf{Links:} \href{https://github.com/EchoSingh/AhoCorasickProject}{GitHub} & \textbf{Links:} \href{https://github.com/EchoSingh/ChatBot_WebProject}{GitHub} \\
 \end{tabularx}
 
-% Projects
-\section{Projects}
+%----------Skills--------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+  \textbf{Programming Languages:} & C, C++, Python, Java, SQL \\
+  \textbf{Frameworks/Technologies:} & MySQL, Transformers, TensorFlow, Gradio, wxWidgets \\
+  \textbf{Tools:} & Git, Jupyter Notebooks, CUDA, SQLite3 \\
+  \textbf{Other:} & Model fine-tuning, AI/ML algorithms, GUI development \\
+\end{tabularx}
 
-% Project 1
-\subsection*{Math-Wizard}
-\noindent
-\begin{minipage}[t]{0.4\textwidth}
-  \textbf{Description:}\\
-  Implement Math Q\&A.
-\end{minipage}%
-\begin{minipage}[t]{0.4\textwidth}
-  \textbf{Technologies Used:}\\
-  PyTorch, Transformers, Gradio, DeepSeekAI
-\end{minipage}%
-\begin{minipage}[t]{0.2\textwidth}
-  \textbf{Link:}\\
-  \href{https://github.com/EchoSingh/Math-Wizard}{Math-Wizard} \ $|$ 
-  \href{https://huggingface.co/spaces/adi2606/Math_Wizard}{Running}
-\end{minipage}
-
-% Add more projects as needed...
+%----------Extracurricular Activities---------
+\section{Extracurricular Activities}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Volunteer for RFH Juniors Run 2024, organized by Rupee For Humanity (RFH), Bangalore. Links: \href{https://drive.google.com}{Drive}}
+  \item Participated in multiple \textbf{Inter-college Hackathons}.
+  \item Chess: Rated \textbf{2000} on Chess.com and \textbf{2200} on Lichess.org.
+\end{itemize}
 
 \end{document}
